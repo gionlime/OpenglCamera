@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity implements SurfaceTexture.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         if (allPermissionsGranted()) {
             glSurfaceView = new MyGLSurfaceView(this);
             renderer =glSurfaceView.getRenderer();
